@@ -1,0 +1,10 @@
+{
+  "name": "docso",
+  "version": "1.0.0",
+  "description": "Doc so",
+  "main": "index.js",
+  "repository": "https://github.com/kimkha/docso",
+  "author": "nkimkha@gmail.com",
+  "license": "MIT",
+  "private": false
+}
