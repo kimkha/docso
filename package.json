@@ -4,7 +4,7 @@
   "description": "Doc so",
   "main": "index.js",
   "repository": "https://github.com/kimkha/docso",
-  "author": "nkimkha@gmail.com",
+  "author": "Nguyen Kim Kha <nkimkha@gmail.com>",
   "license": "MIT",
   "private": false
 }
