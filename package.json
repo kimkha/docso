@@ -2,9 +2,20 @@
   "name": "docso",
   "version": "1.0.0",
   "description": "Doc so",
-  "main": "index.js",
+  "main": "docso.js",
   "repository": "https://github.com/kimkha/docso",
   "author": "Nguyen Kim Kha <nkimkha@gmail.com>",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babelify": "^8.0.0",
+    "browserify": "^16.2.2",
+    "uglify-js": "^3.4.2",
+    "uglifyify": "^5.0.1"
+  },
+  "scripts": {
+    "build": "node browserify.js"
+  }
 }
