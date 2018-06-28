@@ -87,4 +87,3 @@ const docso = function(so) {
 };
 
 module.exports = docso;
-window.docso = docso;

@@ -2,9 +2,20 @@
   "name": "docso",
   "version": "1.0.0",
   "description": "Doc so",
-  "main": "docso.js",
+  "main": "index.js",
   "repository": "https://github.com/kimkha/docso",
   "author": "Nguyen Kim Kha <nkimkha@gmail.com>",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "grunt": "^1.0.3",
+    "grunt-babel": "^7.0.0",
+    "grunt-contrib-uglify": "^3.3.0",
+    "grunt-umd": "^3.0.0"
+  },
+  "scripts": {
+    "build": "grunt"
+  }
 }
