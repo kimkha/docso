@@ -2,7 +2,7 @@
   "name": "docso",
   "version": "1.0.0",
   "description": "Doc so",
-  "main": "index.js",
+  "main": "docso.js",
   "repository": "https://github.com/kimkha/docso",
   "author": "Nguyen Kim Kha <nkimkha@gmail.com>",
   "license": "MIT",
