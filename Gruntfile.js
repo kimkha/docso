@@ -30,6 +30,7 @@ module.exports = function(grunt) {
 		},
 		uglify: {
 			options: {
+				wrap: 'docso',
 				banner: '/*! <%= pkg.name %>@<%= pkg.version %> <%= grunt.template.today("yyyy-mm-dd") %>, source: <%= pkg.repository %>, <%= pkg.license %> License */'
 			},
 			build: {
@@ -43,6 +44,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-umd');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 
-	grunt.registerTask('default', ['babel', 'umd', 'uglify']);
+	// grunt.registerTask('default', ['babel', 'uglify']);
+	grunt.registerTask('default', ['babel']);
 
 };
