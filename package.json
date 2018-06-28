@@ -16,6 +16,7 @@
     "uglifyify": "^5.0.1"
   },
   "scripts": {
-    "build": "node browserify.js"
+    "build": "node browserify.js",
+    "build2": "browserify docso.js --standalone docso -o out.js"
   }
 }

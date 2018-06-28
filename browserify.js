@@ -1,7 +1,7 @@
 var fs = require("fs");
 var browserify = require("browserify");
-browserify("./docso.js")
+browserify("./docso.js", { standalone: 'docso'})
 	.transform("babelify", {presets: ["env"]})
-	.transform("uglifyify", { global: true  })
+	.transform("uglifyify")
 	.bundle()
 	.pipe(fs.createWriteStream("docso.min.js"));
