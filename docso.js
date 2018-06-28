@@ -1,7 +1,7 @@
-var mangso = [ 'không', 'một', 'hai', 'ba', 'bốn', 'năm', 'sáu', 'bảy', 'tám', 'chín' ];
+const mangso = [ 'không', 'một', 'hai', 'ba', 'bốn', 'năm', 'sáu', 'bảy', 'tám', 'chín' ];
 
 function dochangchuc(so, daydu) {
-  var chuoi = '', chuc = ~~(so / 10), donvi = so % 10;
+  let chuoi = '', chuc = ~~(so / 10), donvi = so % 10;
   if (chuc > 1) {
     chuoi = ' ' + mangso[ chuc ] + ' mươi';
     if (donvi === 1) {
@@ -24,7 +24,7 @@ function dochangchuc(so, daydu) {
 }
 
 function docblock(so, daydu) {
-  var chuoi = '', tram = ~~(so / 100);
+  let chuoi = '', tram = ~~(so / 100);
   so = so % 100;
   if (daydu || tram > 0) {
     chuoi = ' ' + mangso[ tram ] + ' trăm';
@@ -36,13 +36,13 @@ function docblock(so, daydu) {
 }
 
 function dochangtrieu(so, daydu) {
-  var chuoi = '', trieu = ~~(so / 1000000);
+  let chuoi = '', trieu = ~~(so / 1000000);
   so = so % 1000000;
   if (trieu > 0) {
     chuoi = docblock(trieu, daydu) + ' triệu';
     daydu = true;
   }
-  var nghin = ~~(so / 1000);
+  let nghin = ~~(so / 1000);
   so = so % 1000;
   if (nghin > 0) {
     chuoi += docblock(nghin, daydu) + ' nghìn';
@@ -54,9 +54,9 @@ function dochangtrieu(so, daydu) {
   return chuoi;
 }
 
-var dochangty = function (so) {
+const dochangty = function (so) {
   if (so === '0') return mangso[ 0 ];
-  var len = so.length, tyL = len, chuoi = '', hauto = '', ty = '';
+  let len = so.length, tyL = len, chuoi = '', hauto = '', ty = '';
   do {
     tyL = len > 9 ? 9 : len;
     ty = Number(so.substring(len - tyL));
@@ -72,13 +72,13 @@ var dochangty = function (so) {
   return chuoi;
 };
 
-var docso = function(so) {
+const docso = function(so) {
   if (typeof so !== 'string' || !(so instanceof String)) {
     so = String(so);
   }
   so = so.replace(/[^\d.]/gi, '');
-  var p = so.split('.');
-  var chuoi = dochangty(p[0]);
+  let p = so.split('.');
+  let chuoi = dochangty(p[0]);
   if (p.length === 2) {
     chuoi += ' chấm gì đó ';
     // TODO
@@ -87,3 +87,4 @@ var docso = function(so) {
 };
 
 module.exports = docso;
+window.docso = docso;
