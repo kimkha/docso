@@ -1,6 +1,6 @@
 {
   "name": "docso",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Doc so",
   "main": "index.js",
   "repository": "https://github.com/kimkha/docso",
@@ -22,6 +22,6 @@
     "README.md",
     "LICENSE",
     "index.js",
-    "docso.min.js"
+    "docso.js"
   ]
 }
