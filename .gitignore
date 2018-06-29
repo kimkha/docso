@@ -63,4 +63,4 @@ typings/
 *.iml
 .idea/
 
-docso.min.js
+docso.js

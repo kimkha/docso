@@ -5,7 +5,7 @@ module.exports = {
   entry: './index.js',
   output: {
     path: path.resolve('.'),
-    filename: 'docso.min.js',
+    filename: 'docso.js',
     library: 'docso',
     libraryTarget: 'umd',
   },
